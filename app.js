@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 import {
   getAuth,
@@ -31,7 +25,7 @@ const password = document.getElementById("password");
 const submit = document.getElementById("submit");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
-const signInButton = document.getElementById("signIn")
+const signInButton = document.getElementById("signIn");
 
 // Sign-up event listener
 submit.addEventListener("click", (event) => {
@@ -39,9 +33,8 @@ submit.addEventListener("click", (event) => {
   createUserAccount();
 });
 signInButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    signInUser();
-
+  event.preventDefault();
+  signInUser();
 });
 
 // Function to create a user account
@@ -57,16 +50,16 @@ function createUserAccount() {
     });
 }
 function signInUser() {
-    signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
-      .then((userCredential) => {
-        alert("User signed in successfully");
-        window.location.href = "dashBoard.html"; // Redirect to dashboard
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-        alert(errorMessage);
-      });
-  }
+  signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
+    .then((userCredential) => {
+      alert("User signed in successfully");
+      window.location.href = "dashBoard.html"; // Redirect to dashboard
+    })
+    .catch((error) => {
+      const errorMessage = error.message;
+      alert(errorMessage);
+    });
+}
 
 // Monitor authentication state (optional)
 onAuthStateChanged(auth, (user) => {
@@ -76,9 +69,6 @@ onAuthStateChanged(auth, (user) => {
     // User is signed out
   }
 });
-
-
-
 
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 // import {
@@ -154,7 +144,6 @@ onAuthStateChanged(auth, (user) => {
 //       alert(error.message);
 //     });
 // }
-
 
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
 // import {
@@ -232,8 +221,6 @@ onAuthStateChanged(auth, (user) => {
 //       alert(errorMessage);
 //     });
 // }
-
-
 
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
