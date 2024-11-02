@@ -68,7 +68,7 @@ span a {
 }
 
 /* Media query for screens 380px to 580px */
-@media (min-width: 280px) and (max-width: 580px) {
+@media (min-width: 300px) and (max-width: 580px) {
   #myForm {
     width: 80%;
     gap: 30px;
@@ -84,8 +84,8 @@ span a {
     font-size: 18px;
   }
   input {
-    padding: 8px;
-    font-size: 12px;
+    padding: 7px 8px;
+    font-size: 10px;
   }
   #submit,
   #signIn{
