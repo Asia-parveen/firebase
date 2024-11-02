@@ -1,0 +1,451 @@
+/* Base styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+#myForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+  flex-direction: column;
+  gap: 40px;
+  width: 366px;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+.img1 {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+h1 {
+  padding-top: 0;
+}
+h1 img {
+  margin-top: 0;
+}
+.form {
+  position: relative;
+}
+.img2 {
+  position: absolute;
+  bottom: 0;
+  width:100% ; /* Default width */
+  height: auto;
+}
+.label {
+  font-size: 20px;
+}
+input {
+  padding: 10px;
+  border-radius: 10px;
+}
+#submit,
+#signIn {
+  font-size: 16px;
+  padding: 10px 25px;
+  background: orange;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+}
+p {
+  margin-top: 10px;
+}
+span a {
+  font-weight: bold;
+  color: orangered;
+}
+
+/* Media query for screens 380px to 580px */
+@media (min-width: 280px) and (max-width: 580px) {
+  #myForm {
+    width: 80%;
+    gap: 30px;
+  }
+  .img1 {
+    height: 150px;
+  }
+  .img2 {
+    width: 100%;
+   
+  }
+  .label {
+    font-size: 18px;
+  }
+  input {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #submit,
+  #signIn{
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens 581px to 780px */
+@media (min-width: 581px) and (max-width: 780px) {
+  #myForm {
+    width: 70%;
+    gap: 35px;
+  }
+  .img1 {
+    height: 180px;
+  }
+  .img2 {
+    width: 100%;
+  }
+  .label {
+    font-size: 20px;
+  }
+  input {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #submit,
+  #signIn{
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+/* Media query for screens 781px to 1080px */
+@media (min-width: 781px) and (max-width: 1080px) {
+  #myForm {
+    width: 60%;
+    gap: 40px;
+  }
+  .img1 {
+    height: 200px;
+  }
+  .img2 {
+    width: 100%;
+  }
+  .label {
+    font-size: 22px;
+  }
+  input {
+    padding: 12px;
+    font-size: 16px;
+  }
+  #submit,
+  #signIn{
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+
+
+/* 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+   
+}
+
+
+
+#myForm{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid green;
+   flex-direction: column;
+   gap: 40px;
+   width: 366px;
+   height: 100vh;
+   position: relative;
+   margin: auto;
+   border-radius:10px ;
+   
+}
+.img1{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+h1{
+   padding-top: 0;
+}
+h1 img{
+    margin-top: 0;
+}
+.form{
+    position: relative;
+}
+.img2{
+    position: absolute;
+    bottom: 0;
+}
+.label{
+    font-size: 20px;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+#submit, #submit1{
+    font-size: 16px;
+    padding: 10px 25px;
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+p{
+    margin-top: 10px;
+}
+span a{
+    font-weight: bold;
+    color: orangered;
+}
+  */
+
+
+/* Base styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+#myForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+  flex-direction: column;
+  gap: 40px;
+  width: 366px;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+.img1 {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+h1 {
+  padding-top: 0;
+}
+h1 img {
+  margin-top: 0;
+}
+.form {
+  position: relative;
+}
+.img2 {
+  position: absolute;
+  bottom: 0;
+}
+.label {
+  font-size: 20px;
+}
+input {
+  padding: 10px;
+  border-radius: 10px;
+}
+#submit,
+#submit1 {
+  font-size: 16px;
+  padding: 10px 25px;
+  background: orange;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+p {
+  margin-top: 10px;
+}
+span a {
+  font-weight: bold;
+  color: orangered;
+} */
+
+/* Media query for screens 380px to 580px */
+/* @media (min-width: 380px) and (max-width: 580px) {
+  #myForm {
+    width: 80%;
+    gap: 30px;
+  }
+  .img1 {
+    height: 150px;
+  } */
+  /* .img2{
+   width: 380px;
+  } */
+  /* .label {
+    font-size: 18px;
+  }
+  input {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #submit,
+  #submit1 {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  p {
+    font-size: 14px;
+  } */
+
+
+/* Media query for screens 581px to 780px */
+/* @media (min-width: 581px) and (max-width: 780px) {
+  #myForm {
+    width: 70%;
+    gap: 35px;
+  }
+  .img1 {
+    height: 180px;
+  }
+ 
+  .label {
+    font-size: 20px;
+  } */
+  /* input {
+    padding: 10px;
+    font-size: 15px;
+  }
+  #submit,
+  #submit1 {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  p {
+    font-size: 15px;
+  }
+} */
+
+/* Media query for screens 781px to 1080px */
+/* @media (min-width: 781px) and (max-width: 1080px) {
+  #myForm {
+    width: 60%;
+    gap: 40px;
+  }
+  .img1 {
+    height: 200px;
+  }
+  .label {
+    font-size: 22px;
+  }
+  input {
+    padding: 12px;
+    font-size: 16px;
+  } */
+  /* #submit,
+  #submit1 {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+  p {
+    font-size: 16px;
+  }
+} */
+
+
+/* 
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+   
+}
+
+
+
+#myForm{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid green;
+   flex-direction: column;
+   gap: 40px;
+   width: 366px;
+   height: 100vh;
+   position: relative;
+   margin: auto;
+   border-radius:10px ;
+   
+}
+.img1{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+h1{
+   padding-top: 0;
+}
+h1 img{
+    margin-top: 0;
+}
+.form{
+    position: relative;
+}
+.img2{
+    position: absolute;
+    bottom: 0;
+}
+.label{
+    font-size: 20px;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+#submit, #submit1{
+    font-size: 16px;
+    padding: 10px 25px;
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+p{
+    margin-top: 10px;
+}
+span a{
+    font-weight: bold;
+    color: orangered;
+}
+  */
